@@ -6,7 +6,11 @@ import { Download, MenuIcon } from 'lucide-react'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
-const Nav = () => {
+type Props = {
+  openNav: () => void;
+};
+
+const Nav = ({openNav}:Props) => {
   const [navBg, setNavBg] = useState(false);
   
   useEffect(() => {
@@ -39,7 +43,7 @@ const Nav = () => {
             <span>Download Resume</span>
           </a>
           <ThemeToggler />
-          <MenuIcon  className='w-8 h-8 cursor-pointer text-black dark:text-white lg:hidden'/>
+          <MenuIcon onClick={openNav} className='w-8 h-8 cursor-pointer text-black dark:text-white lg:hidden'/>
         </div>
       </div>
     </div>
