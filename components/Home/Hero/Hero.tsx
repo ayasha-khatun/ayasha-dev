@@ -1,4 +1,6 @@
-import React from 'react'
+"use client"
+import React from 'react',
+import {TypeAnimation} from 'react-type-animation'
 
 const Hero = () => {
   return (
@@ -14,6 +16,22 @@ const Hero = () => {
           Hi, I'm{' '}
           <span className='text-purple-800 dark:text-yellow-300'>Ayasha Khatun</span>
           </h1>
+          <div className='text-xl sm:text-2xl md:text-3xl text-black dark:text-white font-semibold mb-4 sm:mb-8 h-12'>
+            <TypeAnimation 
+            sequence={[
+              "MERN Stack Developer",
+              2000,
+              "Frontend Developer",
+              2000,
+              "React Developer",
+              2000
+            ]}
+            wrapper='span'
+            speed={50}
+            repeat={Infinity}
+            className='font-mono'
+            />
+          </div>
       </div>
     </div>
   )
