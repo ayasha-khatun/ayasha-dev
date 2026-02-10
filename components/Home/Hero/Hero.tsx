@@ -1,7 +1,7 @@
 "use client"
 import { Button } from '@/components/ui/button'
 import { Download, FolderOpen } from 'lucide-react'
-import React from 'react',
+import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
 
 const Hero = () => {
