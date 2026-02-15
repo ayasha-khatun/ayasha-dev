@@ -46,9 +46,14 @@ const Contact = () => {
                         <div className='grid sm:grid-cols-2 gap-4'>
                             <div className='space-y-2'>
                                 <label  htmlFor="name" className='text-sm font-medium'>Name</label>
-                                <Input id='name' name='name' placeholder='John Smith' required className='bg-gray-100' />
+                                <Input id='name' name='name' placeholder='John Smith' required className="bg-gray-100" />
+                            </div>
+                            <div className='space-y-2'>
+                                <label  htmlFor="subject" className='text-sm font-medium'>Subject</label>
+                                <Input id='subject' name='subject' placeholder='Project Inquiry' required className="bg-gray-100" />
                             </div>
                         </div>
+                        
                     </form>
                 </div>
             </div>
