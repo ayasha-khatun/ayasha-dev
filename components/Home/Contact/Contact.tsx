@@ -1,4 +1,5 @@
 import SectionHeading from '@/components/Helper/SectionHeading';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { contactInfo, socialLinks } from '@/data';
 import { it } from 'node:test';
@@ -49,11 +50,21 @@ const Contact = () => {
                                 <Input id='name' name='name' placeholder='John Smith' required className="bg-gray-100" />
                             </div>
                             <div className='space-y-2'>
-                                <label  htmlFor="subject" className='text-sm font-medium'>Subject</label>
-                                <Input id='subject' name='subject' placeholder='Project Inquiry' required className="bg-gray-100" />
+                                <label  htmlFor="email" className='text-sm font-medium'>Email</label>
+                                <Input id='email' name='email' placeholder='john@example.com' required className="bg-gray-100" />
                             </div>
                         </div>
-                        
+                        <div className='space-y-2'>
+                            <label  htmlFor="subject" className='text-sm font-medium'>Subject</label>
+                            <Input id='subject' name='subject' placeholder='Project Inquiry' required className="bg-gray-100" />
+                        </div>
+                        <div className='space-y-2'>
+                            <label  htmlFor="message" className='text-sm font-medium'>Message</label>
+                            <textarea name="message" id="message" placeholder='Tell me about your project...' rows={5} required className='bg-gray-100 h-40'></textarea>
+                        </div>
+                        <Button type='submit' size={"lg"} className='w-full cursor-pointer'>
+                            <span className='w-4 h-4 '>Send Message</span>
+                        </Button>
                     </form>
                 </div>
             </div>
