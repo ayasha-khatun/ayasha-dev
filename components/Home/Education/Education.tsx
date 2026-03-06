@@ -10,7 +10,8 @@ const Education = () => {
       <div className="relative px-6 max-w-4xl mx-auto">
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-blue-400 to-blue-900 md:-translate-x-px"></div>
         {experiences.map((item,index)=>{
-          return <div key={index} className={`relative flex flex-col md:flex-row gap-8 mb-12 ${index %2 ===0?"md:flex-row-reverse":"" }`}>
+          return <div data-aos="zoom-in" 
+                            data-aos-delay={index * 100} data-aos-anchor-placement="top-center"  key={index} className={`relative flex flex-col md:flex-row gap-8 mb-12 ${index %2 ===0?"md:flex-row-reverse":"" }`}>
             <div className="absolute left-4 md:left-1/2 w-8 h-8 -translate-x-1/2 rounded-full bg-white border-2 border-blue-500 flex items-center justify-center z-10">{item.type === "work"? (
               <Briefcase className='w-4 h-4 text-blue-500' />
             ) : (<GraduationCap className='w-4 h-4 text-blue-500' />

@@ -1,18 +1,23 @@
 import SectionHeading from '@/components/Helper/SectionHeading';
 import Image from 'next/image';
 import React from 'react'
+import aos from './../../../node_modules/aos/dist/aos.esm';
 
 const About = () => {
   return (
     <div className='py-16 bg-gray-100 dark:bg-gray-900'>
         <SectionHeading title_1='About' title_2='Me' description='Get to know the developer behind the code'/>
         <div className='grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center'>
-            <div className='relative'>
+            <div 
+            data-aos="fade-right" 
+            data-aos-delay="0" data-aos-anchor-placement="top-center"  className='relative'>
                 <div className='aspect-square rounded-2xl overflow-hidden p-2'>
                     <Image src={"/images/user.png"} alt='profile' fill className='  object-cover' />
                 </div>
             </div>
-            <div className='space-y-6'>
+            <div 
+            data-aos="fade-left" 
+            data-aos-delay="150" data-aos-anchor-placement="top-center"   className='space-y-6'>
                 <h3 className='text-2xl font-semibold'>
                     A passionate developer who loves to create
                 </h3>

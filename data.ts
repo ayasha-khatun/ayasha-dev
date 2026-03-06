@@ -5,7 +5,7 @@ import {
   Coffee,
   Cpu,
   Database,
-  GitBranch,
+  Github,
   Globe,
   GraduationCap,
   Layers,
@@ -21,12 +21,6 @@ import {
 
 import { FaGithub, FaLinkedin, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 
-export const stats = [
-  { label: "Years Experience", value: "5+" },
-  { label: "Projects Completed", value: "50+" },
-  { label: "Happy Clients", value: "30+" },
-  { label: "Students Taught", value: "1000+" },
-];
 
 export const highlights = [
   { icon: MapPin, text: "Based in San Francisco, CA" },
@@ -74,82 +68,53 @@ export const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@johndoe.dev",
-    href: "mailto:hello@johndoe.dev",
+    value: "ayashakhatun004@gmail.com",
+    href: "mailto:ayashakhatun004@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+880 1604532776",
+    href: "tel:+880 1604532776",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "San Francisco, CA",
+    value: "Dhaka, Bangladesh",
     href: "#",
   },
 ];
 
-export const socialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
-  { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
+export const experiences = [
+  
+  
+  {
+    type: "education",
+    title: "Diploma in Computer Science",
+    company: "Dhaka Mohila Polytechnic Institute",
+    period: "2020-2025",
+    description:
+     "Strong foundation in algorithms, data structures, and software engineering principles.",
+    technologies: ["Computer Science", "Mathematics", "Problem Solving"],
+  }, 
+  {
+    type: "education",
+    title: "Secondary School Certificate",
+    company: "Pathra United High School",
+    period: "2020",
+  },
 ];
 
-export const experiences = [
-  {
-    type: "work",
-    title: "Senior Full-Stack Developer",
-    company: "TechCorp Inc.",
-    period: "2022 - Present",
-    description:
-      "Leading development of enterprise SaaS products. Mentoring junior developers and implementing best practices.",
-    technologies: ["React", "Node.js", "AWS", "TypeScript"],
-  },
-  {
-    type: "work",
-    title: "Full-Stack Developer",
-    company: "StartupXYZ",
-    period: "2020 - 2022",
-    description:
-      "Built and maintained multiple web applications. Collaborated with design team to implement responsive UIs.",
-    technologies: ["Vue.js", "Python", "PostgreSQL", "Docker"],
-  },
-  {
-    type: "education",
-    title: "Master of Computer Science",
-    company: "Stanford University",
-    period: "2018 - 2020",
-    description:
-      "Specialized in distributed systems and machine learning. Thesis on scalable microservices architecture.",
-    technologies: ["Research", "AI/ML", "Distributed Systems"],
-  },
-  {
-    type: "work",
-    title: "Junior Developer",
-    company: "WebAgency Co.",
-    period: "2018 - 2020",
-    description:
-      "Developed client websites and e-commerce platforms. Gained experience in agile methodologies.",
-    technologies: ["JavaScript", "PHP", "MySQL", "WordPress"],
-  },
-  {
-    type: "education",
-    title: "Bachelor of Computer Science",
-    company: "UC Berkeley",
-    period: "2014 - 2018",
-    description:
-      "Strong foundation in algorithms, data structures, and software engineering principles.",
-    technologies: ["Computer Science", "Mathematics", "Problem Solving"],
-  },
+export const socialLinks = [
+  { icon: FaGithub, href: "https://github.com/ayasha-khatun", label: "GitHub" },
+  { icon: FaLinkedinIn, href: "https://linkedin.com", label: "LinkedIn" },
 ];
+
 
 export const footerSocialLinks = [
-  { icon: FaGithub, href: "https://github.com", label: "GitHub" },
+  { icon: FaGithub, href: "https://github.com/ayasha-khatun", label: "GitHub" },
   { icon: FaLinkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: FaTwitter, href: "https://twitter.com", label: "Twitter" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:ayashakhatun004@gmail.com", label: "Email" },
 ];
 
 export const projects = [
@@ -180,33 +145,8 @@ export const projects = [
     demoUrl: "https://example.com",
     githubUrl: "https://github.com",
   },
-  {
-    title: "Real Estate Platform",
-    description:
-      "Property listing platform with virtual tours, mortgage calculator, and agent booking system.",
-    image: "/images/p4.jpg",
-    techStack: ["Vue.js", "Node.js", "MongoDB", "Maps API"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Fitness Tracker",
-    description:
-      "Cross-platform mobile app for workout tracking, nutrition logging, and progress analytics.",
-    image: "/images/p5.jpg",
-    techStack: ["React Native", "Firebase", "Node.js", "Charts"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Learning Management System",
-    description:
-      "Educational platform with video streaming, quizzes, progress tracking, and certificates.",
-    image: "/images/p6.jpg",
-    techStack: ["Next.js", "Prisma", "AWS S3", "Stripe"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
+  
+  
 ];
 
 export const skillCategories = [
@@ -216,8 +156,8 @@ export const skillCategories = [
       { name: "React", icon: Code2 },
       { name: "Next.js", icon: Globe },
       { name: "TypeScript", icon: Terminal },
+      { name: "Javascript", icon: Smartphone },
       { name: "Tailwind CSS", icon: Palette },
-      { name: "React Native", icon: Smartphone },
       { name: "Vue.js", icon: Layout },
     ],
   },
@@ -227,20 +167,20 @@ export const skillCategories = [
       { name: "Node.js", icon: Server },
       { name: "Express", icon: Layers },
       { name: "MongoDB", icon: Database },
-      { name: "PostgreSQL", icon: Database },
-      { name: "GraphQL", icon: Cpu },
+      { name: "Firebase", icon: Database },
       { name: "REST APIs", icon: Cloud },
+      { name: "JWT Token", icon: Cpu },
     ],
   },
   {
     title: "Tools & Others",
     skills: [
-      { name: "Git", icon: GitBranch },
-      { name: "Docker", icon: Server },
-      { name: "AWS", icon: Cloud },
-      { name: "Linux", icon: Terminal },
+      { name: "Github", icon: Github },
       { name: "Figma", icon: Palette },
-      { name: "CI/CD", icon: Cpu },
+      { name: "Chrome DevTools", icon: Server },
+      { name: "AWS", icon: Cloud },
+      { name: "Vercel", icon: Terminal },
+      { name: "Netlify", icon: Cpu },
     ],
   },
 ];
