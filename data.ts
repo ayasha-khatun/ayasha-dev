@@ -102,6 +102,9 @@ export const experiences = [
     title: "Secondary School Certificate",
     company: "Pathra United High School",
     period: "2020",
+    description:
+      "Strong foundation in algorithms, data structures, and software engineering principles.",
+    technologies: ["Computer Science", "Mathematics", "Problem Solving"],
   },
 ];
 
