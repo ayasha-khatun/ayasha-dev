@@ -5,7 +5,7 @@ import aos from './../../../node_modules/aos/dist/aos.esm';
 
 const About = () => {
   return (
-    <div className='py-16 bg-gray-100 dark:bg-gray-900'>
+    <div id='about' className='py-16 bg-gray-100 dark:bg-gray-900'>
         <SectionHeading title_1='About' title_2='Me' description='Get to know the developer behind the code'/>
         <div className='grid w-[80%] mx-auto lg:grid-cols-2 gap-12 items-center'>
             <div 

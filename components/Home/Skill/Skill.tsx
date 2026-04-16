@@ -5,7 +5,7 @@ import SkillCard from './SkillCard';
 
 const Skill = () => {
   return (
-    <div className='py-16 bg-gray-100 dark:bg-gray-950'>
+    <div id='skill' className='py-16 bg-gray-100 dark:bg-gray-950'>
         <SectionHeading 
         title_1='Technical'
         title_2='Skills' 

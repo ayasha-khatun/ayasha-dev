@@ -7,7 +7,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='py-16 bg-gray-100 dark:bg-gray-950'>
+    <div id='contact' className='py-16 bg-gray-100 dark:bg-gray-950'>
         <SectionHeading title_1='Get In' title_2='Touch' description="Have a project in mind or just want to say hi? I'd love to hear from you."/>
         <div className='w-[80%] mx-auto'>
             <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -20,7 +20,7 @@ const Contact = () => {
                         </div>
                         <div className='space-y-4'>
                             {contactInfo.map((item)=>{
-                                return <a href={item.href} key={item.label} target='_blank' className='flex items-center gap-4 bg-white dark:bg-gray-800 shadow-md rounded-xl hover:scale-100 transition-all duration-300 group'>
+                                return <a href={item.href} key={item.label} target='_blank' className='flex items-center py-2 px-2 gap-4 bg-white dark:bg-gray-800 shadow-md rounded-xl hover:scale-100 transition-all duration-300 group'>
                                     <div className='w-12 h-12 rounded-lg bg-blue-600/10 flex items-center justify-center group-hover:bg-blue-600/20 transition-colors'>
                                     <item.icon className='w-5 h-5 text-blue-500 dark:text-white' />
                                     </div>
@@ -61,11 +61,21 @@ const Contact = () => {
                             <Input id='subject' name='subject' placeholder='Project Inquiry' required className="bg-gray-100" />
                         </div>
                         <div className='space-y-2'>
-                            <label  htmlFor="message" className='text-sm font-medium'>Message</label>
-                            <textarea name="message" id="message" placeholder='Tell me about your project...' rows={5} required className='bg-gray-100 h-40'></textarea>
+                            <label htmlFor="message" className='text-sm font-medium'>
+                                Message
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Tell me about your project..."
+                                rows={5}
+                                required
+                                className="w-full rounded-md border border-input bg-gray-100 px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 resize-none dark:bg-gray-900"
+                            ></textarea>
                         </div>
-                        <Button type='submit' size={"lg"} className='w-full cursor-pointer'>
-                            <span className='w-4 h-4 '>Send Message</span>
+                        <Button type='submit' size={"lg"} className='w-full cursor-pointer flex items-center justify-center'>
+                            <span>Send Message</span>
                         </Button>
                     </form>
                 </div>

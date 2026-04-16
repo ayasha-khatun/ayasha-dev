@@ -161,7 +161,7 @@ export const skillCategories = [
       { name: "TypeScript", icon: Terminal },
       { name: "Javascript", icon: Smartphone },
       { name: "Tailwind CSS", icon: Palette },
-      { name: "Vue.js", icon: Layout },
+      { name: "Bootstrap", icon: Layout },
     ],
   },
   {
