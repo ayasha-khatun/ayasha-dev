@@ -2,7 +2,8 @@
 import Logo from '@/components/Helper/Logo'
 import ThemeToggler from '@/components/Helper/ThemeToggler'
 import { NavLinks } from '@/Constant/Constant'
-import { Download, MenuIcon } from 'lucide-react'
+import { MenuIcon } from 'lucide-react'
+import AnimatedEye from '@/components/Helper/AnimatedEye'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 
@@ -35,12 +36,10 @@ const Nav = ({openNav}:Props) => {
           })}
         </div>
         <div className='flex items-center space-x-4'>
-          <a href="#_"
-          className='box-border relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none'>
-            <span className='relative z-20 flex items-center space-x-2 text-sm'>
-              <Download  className='w-4 h-4'/>
-            </span>
-            <span>Download Resume</span>
+          <a href="https://drive.google.com/file/d/1Bc4eTVU32dA8uKUV3g3SkvmLBL5QvTq4/view?usp=sharing" target="_blank" rel="noopener noreferrer"
+          className='box-border relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none gap-2'>
+            <AnimatedEye />
+            <span>View Resume</span>
           </a>
           <ThemeToggler />
           <MenuIcon onClick={openNav} className='w-8 h-8 cursor-pointer text-black dark:text-white lg:hidden'/>

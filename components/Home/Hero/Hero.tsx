@@ -1,6 +1,7 @@
 "use client"
 import { Button } from '@/components/ui/button'
-import { Download, FolderOpen } from 'lucide-react'
+import { FolderOpen } from 'lucide-react'
+import AnimatedEye from '@/components/Helper/AnimatedEye'
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
 
@@ -37,15 +38,15 @@ const Hero = () => {
           <p className='data-aos="fade-up" data-aos-delay="300"  text-lg text-muted-foreground dark:text-gray-200 max-w-2xl mx-auto mb-10'>Crafting exceptional digital experiences with modern technologies. Passionate about building scalable applications and teaching others.</p>
           <div data-aos="fade-up" data-aos-delay="400"  className='flex flex-col sm:flex-row gap-4 justify-center'>
             <Button size={'lg'} asChild className='w-fit mx-auto sm:mx-0'>
-              <a href="#">
-                <FolderOpen className='w-5 h-5 mr-2' />
+              <a href="#projects">
+                <FolderOpen className='w-5 h-5 mr-1' />
                 View Projects
               </a>
             </Button>
-            <Button size={'lg'} asChild className='w-fit mx-auto sm:mx-0'>
-              <a href="#">
-                <Download className='w-5 h-5 mr-2' />
-                Download Resume
+            <Button size={'lg'} asChild className='w-fit mx-auto sm:mx-0 group'>
+              <a href="https://drive.google.com/file/d/1Bc4eTVU32dA8uKUV3g3SkvmLBL5QvTq4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                <AnimatedEye className='mr-1' colorClass='text-white dark:text-black' />
+                View Resume
               </a>
             </Button>
           </div>

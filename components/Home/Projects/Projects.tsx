@@ -1,6 +1,5 @@
 import SectionHeading from '@/components/Helper/SectionHeading'
 import { projects } from '@/data'
-import React from 'react'
 import ProjectCard from './ProjectCard'
 
 const Project = () => {
@@ -24,4 +23,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default Project;

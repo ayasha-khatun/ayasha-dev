@@ -34,7 +34,7 @@ export const userReviewData = [
     id: 1,
     name: "John Doe",
     profession: "Real Estate Agent",
-    userImage: "/images/u1.jpg",
+    userImage: "/images/propease.PNG",
     review:
       "A wonderful experience! The platform made it easy to find exactly what I needed. lorem ipsum dolor sit ame",
   },
@@ -42,7 +42,7 @@ export const userReviewData = [
     id: 2,
     name: "Mike Smith",
     profession: "Business Owner",
-    userImage: "/images/u2.jpg",
+    userImage: "/images/marathon.PNG",
     review:
       "Great selection of properties and seamless process. Highly recommended for anyone looking to invest.",
   },
@@ -103,7 +103,7 @@ export const experiences = [
     company: "Pathra United High School",
     period: "2020",
     description:
-      "Strong foundation in algorithms, data structures, and software engineering principles.",
+      "This is a board exam in Bangladesh taken after class 10 to evaluate secondary level education.",
     technologies: ["Computer Science", "Mathematics", "Problem Solving"],
   },
 ];
@@ -122,31 +122,31 @@ export const footerSocialLinks = [
 
 export const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Real Estate Platform",
     description:
-      "A full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
-    image: "/images/p1.jpg",
-    techStack: ["Next.js", "TypeScript", "Stripe", "MongoDB"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A full-stack real estate platform allowing agents to list properties, manage offers, and complete secure transactions.",
+    image: "/images/propease.PNG",
+    techStack: ["React", "Node.js", "Express", "MongoDB","JWT"," Tailwind CSS"],
+    demoUrl: "https://propease-baa74.web.app/",
+    githubUrl: "https://github.com/ayasha-khatun/propease_repo",
   },
   {
-    title: "Task Management App",
+    title: "Marathon Management System",
     description:
-      "Collaborative project management tool with real-time updates, Kanban boards, and team analytics.",
-    image: "/images/p2.jpg",
-    techStack: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A platform to manage marathons create, register, and monitor events. Features include authentication, registration tracking, and dashboards for users and admins.",
+    image: "/images/marathon.PNG",
+    techStack: ["React", "Node.js", "Express", "MongoDB","JWT"," Tailwind CSS"],
+    demoUrl: "https://marathon-management-syst-38d0d.web.app/",
+    githubUrl: "https://github.com/ayasha-khatun/marathon_repo",
   },
   {
-    title: "AI Content Generator",
+    title: "Recipe Book App",
     description:
-      "GPT-powered content creation platform for marketers with templates and workflow automation.",
-    image: "/images/p3.jpg",
-    techStack: ["React", "Python", "OpenAI", "FastAPI"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A recipe management app where users can add, edit, like, and view their favorite recipes.",
+    image: "/images/recipebook.PNG",
+    techStack: ["React", "Firebase Auth", "MongoDB"," Tailwind CSS"],
+    demoUrl: "https://recipe-book-app-58c35.web.app/",
+    githubUrl: "https://github.com/ayasha-khatun/recipe_book",
   },
   
   

@@ -1,7 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
-import React from 'react'
 import { FaGithub } from 'react-icons/fa6';
 
 type Props ={
@@ -25,6 +24,7 @@ const ProjectCard = ({
     <div className='group relative bg-white dark:bg-gray-800 shadow-md rounded-2xl overflow-hidden'>
         <div className="relative h-48 overflow-hidden">
             <Image src={image} alt={title} width={400} height={400} className='w-full h-full object-cover' />
+            
         </div>
         <div className="p-6">
             <h3 className='text-xl text-black dark:text-white font-semibold mb-2 group-hover:text-blue-500 transition-colors'>
